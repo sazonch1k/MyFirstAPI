@@ -1,0 +1,122 @@
+[
+    {
+        "student_id": 1,
+        "first_name": "Иван",
+        "last_name": "Иванов",
+        "date_of_birth": "2017-05-15",
+        "email": "ivan.ivanov@example.com",
+        "phone_number": "+7 (123) 456-7890",
+        "address": "г. Москва, ул. Пушкина, д. 10, кв. 5",
+        "enrollment_year": 2017,
+        "grade": 3,
+        "special_notes": null
+    },
+    {
+        "student_id": 2,
+        "first_name": "Мария",
+        "last_name": "Петрова",
+        "date_of_birth": "2016-11-03",
+        "email": "maria.petrova@example.com",
+        "phone_number": "+7 (495) 111-2233",
+        "address": "г. Москва, ул. Ленина, д. 25, кв. 14",
+        "enrollment_year": 2016,
+        "grade": 4,
+        "special_notes": null
+    },
+    {
+        "student_id": 3,
+        "first_name": "Алексей",
+        "last_name": "Смирнов",
+        "date_of_birth": "2017-02-20",
+        "email": "alexey.smirnov@example.com",
+        "phone_number": "+7 (812) 222-3344",
+        "address": "г. Санкт-Петербург, Невский пр., д. 102, кв. 8",
+        "enrollment_year": 2017,
+        "grade": 3,
+        "special_notes": "Аллергия на орехи"
+    },
+    {
+        "student_id": 4,
+        "first_name": "Екатерина",
+        "last_name": "Кузнецова",
+        "date_of_birth": "2018-07-09",
+        "email": "ekaterina.kuznetsova@example.com",
+        "phone_number": "+7 (343) 333-4455",
+        "address": "г. Екатеринбург, ул. Мира, д. 7, кв. 21",
+        "enrollment_year": 2018,
+        "grade": 2,
+        "special_notes": null
+    },
+    {
+        "student_id": 5,
+        "first_name": "Дмитрий",
+        "last_name": "Волков",
+        "date_of_birth": "2016-09-14",
+        "email": "dmitry.volkov@example.com",
+        "phone_number": "+7 (831) 444-5566",
+        "address": "г. Нижний Новгород, ул. Горького, д. 18, кв. 30",
+        "enrollment_year": 2016,
+        "grade": 4,
+        "special_notes": null
+    },
+    {
+        "student_id": 6,
+        "first_name": "Анна",
+        "last_name": "Соколова",
+        "date_of_birth": "2017-12-01",
+        "email": "anna.sokolova@example.com",
+        "phone_number": "+7 (383) 555-6677",
+        "address": "г. Новосибирск, ул. Советская, д. 56, кв. 12",
+        "enrollment_year": 2017,
+        "grade": 3,
+        "special_notes": "Нуждается в дополнительных занятиях по математике"
+    },
+    {
+        "student_id": 7,
+        "first_name": "Михаил",
+        "last_name": "Морозов",
+        "date_of_birth": "2018-03-27",
+        "email": "mikhail.morozov@example.com",
+        "phone_number": "+7 (846) 666-7788",
+        "address": "г. Самара, ул. Гагарина, д. 9, кв. 5",
+        "enrollment_year": 2018,
+        "grade": 2,
+        "special_notes": null
+    },
+    {
+        "student_id": 8,
+        "first_name": "Ольга",
+        "last_name": "Новикова",
+        "date_of_birth": "2016-06-18",
+        "email": "olga.novikova@example.com",
+        "phone_number": "+7 (861) 777-8899",
+        "address": "г. Краснодар, ул. Красная, д. 120, кв. 44",
+        "enrollment_year": 2016,
+        "grade": 4,
+        "special_notes": null
+    },
+    {
+        "student_id": 9,
+        "first_name": "Кирилл",
+        "last_name": "Фёдоров",
+        "date_of_birth": "2017-08-05",
+        "email": "kirill.fedorov@example.com",
+        "phone_number": "+7 (351) 888-9900",
+        "address": "г. Челябинск, ул. Труда, д. 33, кв. 19",
+        "enrollment_year": 2017,
+        "grade": 3,
+        "special_notes": "Посещает спортивную секцию"
+    },
+    {
+        "student_id": 10,
+        "first_name": "Софья",
+        "last_name": "Алексеева",
+        "date_of_birth": "2018-10-22",
+        "email": "sofia.alekseeva@example.com",
+        "phone_number": "+7 (473) 999-0011",
+        "address": "г. Воронеж, ул. Кольцовская, д. 41, кв. 27",
+        "enrollment_year": 2018,
+        "grade": 2,
+        "special_notes": null
+    }
+]
