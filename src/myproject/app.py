@@ -10,7 +10,7 @@ app = FastAPI()
 @app.get("/") 
 def home_page(): 
     return {"message": "Привет, Мир!"} 
- 
+
 @app.get("/students") 
 def get_all_students(): 
     try: 
