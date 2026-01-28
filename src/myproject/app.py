@@ -19,6 +19,16 @@ def get_all_students():
         raise HTTPException(500, "students.json not found")
     
 @app.get("/students/{grade}") 
-def get_all_students_grade(grade: int): 
-    students = json_to_dict_list(DATA) 
-    return [s for s in students if s.get("grade") == grade]
+def get_all_students_grade(grade: int, last_name: str | None = None): 
+
+    students = json_to_dict_list(DATA)
+    students_classmates = [s for s in students if s.get("grade") == grade]
+
+    if last_name is None:
+        return students_classmates
+    
+    return_list = []
+    for student in students_classmates:
+        if student.get('last_name') == last_name:
+            return_list.append(student)
+    return return_list
