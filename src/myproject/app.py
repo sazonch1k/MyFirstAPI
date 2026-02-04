@@ -3,9 +3,25 @@ from myproject.utils import json_to_dict_list
 import os 
 from pathlib import Path 
 
+
+
 DATA = Path(__file__).resolve().parents[1] / "data" / "students.json"
 
 app = FastAPI() 
+
+app = FastAPI( 
+    title="School API", 
+    description="Учебный API для работы с учениками и предметами.", 
+    version="1.0.0", 
+    contact={"name": "Team", "email": "team@example.com"}, 
+    license_info={"name": "MIT", "url": "https://opensource.org/licenses/MIT"},  
+    openapi_url="/openapi.json" 
+) 
+
+app.openapi_tags = [ 
+    {"name": "health", "description": "Проверка, что сервер жив"}, 
+    {"name": "students", "description": "Эндпоинты по ученикам"}, 
+] 
  
 @app.get("/") 
 def home_page(): 
