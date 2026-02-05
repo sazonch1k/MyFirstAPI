@@ -2,7 +2,10 @@ from fastapi import FastAPI, HTTPException
 from myproject.utils import json_to_dict_list 
 import os 
 from pathlib import Path 
-
+from pathlib import Path 
+from fastapi import FastAPI, HTTPException, Query, Path as PathParam 
+from myproject.utils import json_to_dict_list 
+from myproject.schemas import Student, Error
 
 
 DATA = Path(__file__).resolve().parents[1] / "data" / "students.json"
@@ -23,28 +26,48 @@ app.openapi_tags = [
     {"name": "students", "description": "Эндпоинты по ученикам"}, 
 ] 
  
-@app.get("/") 
+@app.get( 
+    "/", 
+    tags=["health"], 
+    summary="Пинг", 
+    description="Простой ответ, чтобы проверить, что сервер работает.", 
+) 
 def home_page(): 
     return {"message": "Привет, Мир!"} 
 
-@app.get("/students") 
-def get_all_students(): 
+@app.get( 
+    "/students", 
+    tags=["students"], 
+    summary="Список учеников (с фильтром по классу)", 
+    description="Вернёт всех учеников или только указанный класс через query-параметр `grade`.", 
+    response_model=list[Student], 
+    responses={500: {"model": Error, "description": "Файл students.json не найден"}}, 
+) 
+def get_all_students( 
+    grade: int | None = Query(None, ge=1, le=11, description="Опциональный фильтр по классу (1–11)") ): 
     try: 
-        return json_to_dict_list(DATA) 
+        students = json_to_dict_list(DATA) 
     except FileNotFoundError: 
-        raise HTTPException(500, "students.json not found")
+        raise HTTPException(status_code=500, detail="students.json not found") 
+ 
+    if grade is None: 
+        return students 
+    return [s for s in students if s.get("grade") == grade]
     
-@app.get("/students/{grade}") 
-def get_all_students_grade(grade: int, last_name: str | None = None): 
-
-    students = json_to_dict_list(DATA)
-    students_classmates = [s for s in students if s.get("grade") == grade]
-
-    if last_name is None:
-        return students_classmates
-    
-    return_list = []
-    for student in students_classmates:
-        if student.get('last_name') == last_name:
-            return_list.append(student)
-    return return_list
+@app.get( 
+    "/students/{grade}", 
+    tags=["students"], 
+    summary="Ученики заданного класса (+ фильтр по фамилии)", 
+    description=("Ищет учеников по классу (параметр пути). " 
+                 "Опционально можно отфильтровать по фамилии `last_name` (без учёта регистра)."), 
+    response_model=list[Student])
+ 
+def get_students_by_grade( 
+    grade: int = PathParam(..., ge=1, le=11, description="Класс (1–11)"), 
+    last_name: str | None = Query(None, description="Фамилия, например Иванов"), ): 
+    students = json_to_dict_list(DATA) 
+    filtered = [s for s in students if s.get("grade") == grade] 
+    if last_name: 
+        ln = last_name.strip().lower() 
+        filtered = [s for s in filtered if s.get("last_name", "").lower() == ln] 
+    return filtered
