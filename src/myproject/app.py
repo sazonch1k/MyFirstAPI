@@ -173,6 +173,7 @@ def delete_student(student_id: int):
         raise HTTPException(status_code=500, detail="students.json not found")
     
     for i, s in enumerate(students):
+        print(s.get("student_id"), student_id)
         if s.get("student_id") == student_id:
             del students[i]
             dict_list_to_json(students, DATA)
