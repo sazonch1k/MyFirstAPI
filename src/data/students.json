@@ -1,0 +1,211 @@
+[
+    {
+        "student_id": 2,
+        "first_name": "Петр",
+        "last_name": "Петров",
+        "date_of_birth": "2016-03-10",
+        "email": "petr.petrov@example.com",
+        "phone_number": "+7 (495) 123-45-67",
+        "address": "г. Москва, ул. Лермонтова, д. 5, кв. 12",
+        "enrollment_year": 2018,
+        "grade": 2
+    },
+    {
+        "student_id": 3,
+        "first_name": "Анна",
+        "last_name": "Смирнова",
+        "date_of_birth": "2014-11-22",
+        "email": "anna.smirnova@example.com",
+        "phone_number": "+7 (916) 234-56-78",
+        "address": "г. Москва, ул. Тверская, д. 20, кв. 45",
+        "enrollment_year": 2015,
+        "grade": 5
+    },
+    {
+        "student_id": 4,
+        "first_name": "Дмитрий",
+        "last_name": "Иванов",
+        "date_of_birth": "2011-07-30",
+        "email": "dmitry.ivanov@example.com",
+        "phone_number": "+7 (903) 345-67-89",
+        "address": "г. Москва, ул. Арбат, д. 8, кв. 23",
+        "enrollment_year": 2012,
+        "grade": 9
+    },
+    {
+        "student_id": 5,
+        "first_name": "Елена",
+        "last_name": "Кузнецова",
+        "date_of_birth": "2013-09-05",
+        "email": "elena.kuznetsova@example.com",
+        "phone_number": "+7 (925) 456-78-90",
+        "address": "г. Москва, ул. Новый Арбат, д. 15, кв. 8",
+        "enrollment_year": 2014,
+        "grade": 7
+    },
+    {
+        "student_id": 6,
+        "first_name": "Алексей",
+        "last_name": "Смирнов",
+        "date_of_birth": "2016-12-18",
+        "email": "alexey.smirnov@example.com",
+        "phone_number": "+7 (499) 567-89-01",
+        "address": "г. Москва, ул. Полянка, д. 3, кв. 56",
+        "enrollment_year": 2017,
+        "grade": 3
+    },
+    {
+        "student_id": 7,
+        "first_name": "Мария",
+        "last_name": "Попова",
+        "date_of_birth": "2010-02-14",
+        "email": "maria.popova@example.com",
+        "phone_number": "+7 (926) 678-90-12",
+        "address": "г. Москва, ул. Знаменка, д. 7, кв. 14",
+        "enrollment_year": 2011,
+        "grade": 10
+    },
+    {
+        "student_id": 8,
+        "first_name": "Сергей",
+        "last_name": "Васильев",
+        "date_of_birth": "2012-05-20",
+        "email": "sergey.vasiliev@example.com",
+        "phone_number": "+7 (985) 789-01-23",
+        "address": "г. Москва, ул. Остоженка, д. 12, кв. 34",
+        "enrollment_year": 2013,
+        "grade": 8
+    },
+    {
+        "student_id": 9,
+        "first_name": "Ольга",
+        "last_name": "Иванова",
+        "date_of_birth": "2015-08-25",
+        "email": "olga.ivanova@example.com",
+        "phone_number": "+7 (977) 890-12-34",
+        "address": "г. Москва, ул. Пречистенка, д. 9, кв. 67",
+        "enrollment_year": 2016,
+        "grade": 5
+    },
+    {
+        "student_id": 10,
+        "first_name": "Андрей",
+        "last_name": "Соколов",
+        "date_of_birth": "2013-10-03",
+        "email": "andrey.sokolov@example.com",
+        "phone_number": "+7 (968) 901-23-45",
+        "address": "г. Москва, ул. Большая Дмитровка, д. 4, кв. 89",
+        "enrollment_year": 2014,
+        "grade": 7
+    },
+    {
+        "student_id": 11,
+        "first_name": "Наталья",
+        "last_name": "Михайлова",
+        "date_of_birth": "2011-04-17",
+        "email": "natalia.mikhailova@example.com",
+        "phone_number": "+7 (915) 012-34-56",
+        "address": "г. Москва, ул. Мясницкая, д. 11, кв. 34",
+        "enrollment_year": 2012,
+        "grade": 9
+    },
+    {
+        "student_id": 12,
+        "first_name": "Михаил",
+        "last_name": "Новиков",
+        "date_of_birth": "2014-06-28",
+        "email": "mikhail.novikov@example.com",
+        "phone_number": "+7 (901) 123-45-67",
+        "address": "г. Москва, ул. Покровка, д. 6, кв. 12",
+        "enrollment_year": 2015,
+        "grade": 6
+    },
+    {
+        "student_id": 13,
+        "first_name": "Татьяна",
+        "last_name": "Федорова",
+        "date_of_birth": "2009-09-12",
+        "email": "tatiana.fedorova@example.com",
+        "phone_number": "+7 (926) 234-56-78",
+        "address": "г. Москва, ул. Маросейка, д. 5, кв. 67",
+        "enrollment_year": 2010,
+        "grade": 11
+    },
+    {
+        "student_id": 14,
+        "first_name": "Владимир",
+        "last_name": "Морозов",
+        "date_of_birth": "2012-12-01",
+        "email": "vladimir.morozov@example.com",
+        "phone_number": "+7 (903) 345-67-89",
+        "address": "г. Москва, ул. Солянка, д. 3, кв. 45",
+        "enrollment_year": 2013,
+        "grade": 8
+    },
+    {
+        "student_id": 15,
+        "first_name": "Екатерина",
+        "last_name": "Волкова",
+        "date_of_birth": "2015-07-19",
+        "email": "ekaterina.volkova@example.com",
+        "phone_number": "+7 (495) 456-78-90",
+        "address": "г. Москва, ул. Ильинка, д. 8, кв. 23",
+        "enrollment_year": 2016,
+        "grade": 5
+    },
+    {
+        "student_id": 16,
+        "first_name": "Иван",
+        "last_name": "Петров",
+        "date_of_birth": "2010-03-22",
+        "email": "ivan.petrov2@example.com",
+        "phone_number": "+7 (977) 567-89-01",
+        "address": "г. Москва, ул. Варварка, д. 7, кв. 56",
+        "enrollment_year": 2011,
+        "grade": 10
+    },
+    {
+        "student_id": 17,
+        "first_name": "Анастасия",
+        "last_name": "Смирнова",
+        "date_of_birth": "2013-11-08",
+        "email": "anastasia.smirnova@example.com",
+        "phone_number": "+7 (916) 678-90-12",
+        "address": "г. Москва, ул. Никольская, д. 4, кв. 78",
+        "enrollment_year": 2014,
+        "grade": 7
+    },
+    {
+        "student_id": 18,
+        "first_name": "Павел",
+        "last_name": "Кузнецов",
+        "date_of_birth": "2015-02-27",
+        "email": "pavel.kuznetsov@example.com",
+        "phone_number": "+7 (925) 789-01-23",
+        "address": "г. Москва, ул. Рождественка, д. 9, кв. 14",
+        "enrollment_year": 2016,
+        "grade": 5
+    },
+    {
+        "student_id": 19,
+        "first_name": "Виктория",
+        "last_name": "Иванова",
+        "date_of_birth": "2011-10-14",
+        "email": "victoria.ivanova@example.com",
+        "phone_number": "+7 (985) 890-12-34",
+        "address": "г. Москва, ул. Неглинная, д. 5, кв. 67",
+        "enrollment_year": 2012,
+        "grade": 9
+    },
+    {
+        "student_id": 20,
+        "first_name": "Александр",
+        "last_name": "Васильев",
+        "date_of_birth": "2009-05-30",
+        "email": "alexander.vasiliev@example.com",
+        "phone_number": "+7 (499) 901-23-45",
+        "address": "г. Москва, ул. Петровка, д. 12, кв. 89",
+        "enrollment_year": 2010,
+        "grade": 11
+    }
+]
