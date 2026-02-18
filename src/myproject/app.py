@@ -175,7 +175,7 @@ def delete_student(student_id: int):
     for i, s in enumerate(students):
         if s.get("student_id") == student_id:
             del students[i]
-            dict_list_to_json(Student, DATA)
+            dict_list_to_json(students, DATA)
             return Response(status_code=204)
         
     raise HTTPException(status_code=404, detail="student not found")
