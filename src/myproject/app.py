@@ -181,6 +181,28 @@ def delete_student(student_id: int):
         
     raise HTTPException(status_code=404, detail="student not found")
         
+################################
 
+@app.get(
+    "/students/count/{grade}",
+    tags=["students"],
+    summary="Количество учеников",
+    description="Возвращает только количество учеников одного конкретного класса, указанного в grade",
+    responses={
+        200: {"description": "Успешный подсчет"},
+        500: {"model": Error, "description": "Файл students.json не найден"}
+    }
+)
+def count_students(grade: int):
+    try:
+        students = json_to_dict_list(DATA)
+    except FileNotFoundError:
+        raise HTTPException(status_code=500, detail="students.json not found")
+    
+    count_in_grade = 0
 
+    for i, s in enumerate(students):
+        if s.get("grade") == grade:
+            count_in_grade += 1
 
+    return f'Количество учеников в {grade} классе: {count_in_grade}' 
